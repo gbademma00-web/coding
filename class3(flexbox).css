@@ -1,0 +1,47 @@
+/* text are 1 dimensional item (flexbox) ('*' declares all the whole html body) {in padding the first part is for the vertical, then the other is for the horizontal} {align item and justify-item have similar functions, unless space betwwen, evenly, around} {align item is for colummn [vertical], while justify item is for row [horizontal]*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+    background-color: lightpink;
+}
+/*Baseline means it will start at the beginning of the line, while last baseline goes to the last line*/
+/* flex-grow: how much an item can fill a space. flex-shrink: how much an item can shrink in a space that is not enough */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: aquamarine;
+    border: 2pc solid darkcyan;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+/* nowrap: make element available on one line. while wrap: breaks the item to another line */
+.item {
+    text-align: center;
+    border: 2px solid blue;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    flex-basis: 50px;
+
+}
+/* uses of flex-box: use for navigation bar, styling card layout, form control, centering content horizontally and vertically */
+.nav-example {
+    justify-content: flex-start;
+    background-color: blue;
+}
+.nav-example .item {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 500;
+}

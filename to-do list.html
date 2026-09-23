@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family:
+          "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body> 
+    <h1>To-Do List</h1>
+    <form id="todoform">
+      <div class="form-group">
+        <input
+          type="text"
+          name=""
+          id="taskInput"
+          placeholder="What do you want to do?"
+          autocomplete="off"
+        />
+        <button type="submit">Add</button>
+      </div>
+      <p id="error"></p>
+    </form>
+    <ul id="taskList">
+      <p id="emptyMessage">No tasks yet. Add one above</p>
+    </ul>
+
+    <script>
+      const form = document.getElementById ('#todoForm');
+      const taskInput = document.querySelector('#taskInput');
+      const errorElement = document.querySelector('#error')
+      const emptyMessage = document.querySelector('#emptyMessage');
+
+      function showError(message) {
+          errorElement.textContent =
+      }
+      function clearError () {
+
+      }
+      function updateEmptyMessage() {
+          if (taskList.children.Length === 0) {
+              emptyMessage.syle.display =
+          }
+      }
+    </script>
+  </body>
+</html>

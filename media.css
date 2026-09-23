@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-color: pink;
+    color: black;
+    padding: 1rem;
+}
+.header {
+    background-color: blue;
+    color: white;
+    padding: 1.25rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.25rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+}
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.card {
+    background-color: purple;
+    color: red;
+    border: 2px solid grey;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+.footer {
+    background-color: rgb(72, 70, 70);
+    text-align: center;
+    border-radius: 8px;
+    padding: 1.25rem;
+}
+
+
+/* Mobile First Approach (ALWAYS START WITH THE MOBILE FIRST)[Laptop default is 1080px for the smallest]*/ 
+
+@media (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop style */
+@media (min-width: 1024px) {
+    body {
+        padding: 2rem;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+    .nav {
+        margin-top: 0;
+    }
+}

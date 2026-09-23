@@ -1,0 +1,68 @@
+body {
+    background-color: blue;
+    height: 80vh;
+    margin: 12px;
+}
+
+.catalogue {
+    background-color: grey;
+    width: 60%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: 500;
+}
+
+.label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.password{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input {
+    background-color:pink;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 60%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input:hover {
+   cursor: pointer;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+   background-color: blueviolet;
+   color: cyan;
+}
+
+button { 
+    width: 62%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: aqua;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: purple;
+    color: blue;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+    padding: 8px;
+}
