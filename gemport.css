@@ -127,9 +127,13 @@ h3 {
 }
 .pro-nav {
     display: grid;
-    grid-template-columns: repeat(3, 1frr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
     background: linear-gradient(135deg, gold, darkblue);
     color: green;
+    border: 2px solid cyan;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 .h3 {
     text-align: center;
