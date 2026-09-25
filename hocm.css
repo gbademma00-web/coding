@@ -1,32 +1,12 @@
-.img3 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-right: 160px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.img3:hover {
-    width: 315px;
-    height: 315px;
-    border-radius: 50%;
-    margin-left: 10px;
-}
-.img2:hover, .img1:hover {
-    width: 315px;
-    height: 315px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-.img2 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
-.img1 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    margin-left: 160px;
-}
+/* html, body {
+    overflow-x: hidden;
+    width: 100%;
+} */
 .header {
     display: flex;
     background-color: rgb(212, 112, 12);
@@ -35,17 +15,44 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 1.5rem;
+    height: 3.5rem;
     padding: 1rem;
     z-index: 100;
 }
+.header nav {
+    margin-left: auto;
+    display: flex;
+    gap: 2rem;
+}
+.header nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: "noto-serif";
+    font-size: 1.688rem;
+    font-weight: 300;
+    gap: 1rem;
+    transition: transform 0.3s ease-out, background-color 0.3s ease;
+}
+.header nav a:hover {
+    transform: translateY(-3px);
+    background-color: rgb(212, 112, 12);
+    border-radius: 0.625rem;
+    text-align: center;
+    color: green;
+    font-size: 20px;
+    font-weight: 250;
+    text-transform: uppercase;
+    cursor: progress;
+    text-decoration: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
+}
 .avatar1 {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     border-radius: 50%;
     background-position: left;
     position: fixed;
-    margin-top: -14px;
+    margin-top: -0.875rem;
     z-index: 100;
 }
 .pmt1 {
@@ -54,9 +61,10 @@
     left: 0;
     padding: 1rem;
     z-index: 100;
-    margin-left: 50px;
-    margin-top: 17px;
-    font-size: 15px;
+    margin-left: 3.125rem;
+    margin-top: 1.063rem;
+    font-size: 0.938rem;
+    color: black;
 }
 .pmt1:hover {
     position: fixed;
@@ -64,109 +72,43 @@
     left: 0;
     padding: 1rem;
     z-index: 100;
-    margin-left: 50px;
-    margin-top: 17px;
-    font-size: 15px;
+    margin-left: 3.125rem;
+    margin-top: 1.063rem;
+    font-size: 0.938rem;
     color: white;
     text-decoration: underline green 2px;
-}
-.pmt:hover {
-    color: white;
-    text-decoration: underline rgb(212, 112, 12) 2px;
-}
-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
-.nav {
-    background-color: rgb(212, 112, 12);
-    position: fixed;
-    top: 0;
-    border: 10px;
-    display: flex;
-    width: 100%;
-    height: 1.5rem;
-    /* margin-left: 1105px; */
-    padding: 1rem;
-    justify-content: center;
-    word-spacing: 5px;
-}
-nav a {
-    color: whitesmoke;
-    text-decoration: none;
-    font-family: "noto-serif";
-    font-size: 25px;
-    font-weight: 300;
-    gap: 1rem;
-}
-nav a:hover {
-    border-radius: 10px;
-    color: green;
-    font-size: 27px;
-    font-weight: 150;
-    cursor: progress;
-    text-decoration: none;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
-}
-.but4 {
-    background-color: whitesmoke;
-    justify-content: end;
-    border: 20px;
-    border-radius: 10px;
-}
-.but4 a {
-    color: rgb(212, 112, 12);
-}
-.but4:hover {
-    background-color: whitesmoke;
-    justify-content: end;
-    border: 20px;
-    border-radius: 10px;
-    
 }
 .body {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTciFPMXJT-FQaavj0qo6s7l5veD33JTRU-juCy9YbEfY6Nbaq6uiAVOH0&s=10);    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-left: -20px;
-    margin-right: -20px;
 }
 h2 {
     color: black;
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: 600;
     font-family: "noto-serif";
-     margin-left: 30px;
+    margin-left: 1.875rem;
+    margin-top: 3.75rem;
 }
-.p2 {
+.motto {
    color: greenyellow;
    font-family: "Coda";
-   font-size: 45px;
+   font-size: 2.188rem;
    font-weight: 300; 
-   margin-left: 30px;
-   margin-top: -25px;
+   margin-left: 1.875rem;
+   margin-top: 0.188rem;
+   margin-bottom: 1.25rem;
 }
-h4 {
-    color: black;
-    font-family: "not-serif";
-    font-size: 30px;
-    font-weight: 400;
-}
-h4:hover {
-    color: orange;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
 .but1 {
     background-color: rgb(212, 112, 12);
-    border: 20px;
-    border-radius: 10px;
-    margin-bottom: 70px;
-    margin-left: 30px;
-    margin-bottom: 150px;
+    border: 1.25rem;
+    border-radius: 0.635rem;
+    margin-top: 1.25rem;
+    margin-bottom: 2.813rem;
+    margin-left: 1.875rem;
+    margin-bottom: 75px;
 }
 .but1 a {
     text-decoration: none;
@@ -181,84 +123,142 @@ h4:hover {
     background-color: whitesmoke;
     color: green;
     font-family: "noto-serif";
-    font-size: 20px;
+    font-size: 1.25rem;
     position: relative;
     text-decoration: solid;
     padding: 0.25rem;
-    border: 15px;
-    border-radius: 10px;
+    border: 0.938rem;
+    border-radius: 0.625rem;
 }
 #about {
     background-color: white;
-    color: green;
     font-family: "coda";
-    font-size: 20px;
-    font-weight: 100;
     text-align: center;
-    border: 50px;
-    padding: 1rem;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-top: -1.875rem;
+    margin-bottom: -2rem;
+}
+h4 {
+    color: black;
+    font-family: "not-serif";
+    font-size: 1.875rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+h4:hover {
+    color: orange;
+    cursor: pointer;
+    text-decoration: underline;
 }
 .p4 {
     color: rgb(230, 114, 6);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: 200;
-    font-display: block;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
 #Top-pick {
     background-color: rgb(212, 112, 12);
     color: whitesmoke;
-    font-size: 23px;
-    font-weight: 200;
     text-align: center;
-    margin-top: -30px;
-    margin-bottom: -30px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-top: -1.875rem;
+    margin-bottom: -2rem;
 }
-p {
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 23px;
-    font-weight: 200;
-    font-display: block;
-}
-h3 {
+#Top-pick h3 {
     color: white;
     font-family: "not-serif";
-    font-size: 30px;
+    font-size: 2.188rem;
     font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 30px;
 }
-h3:hover{
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+    border: 2px;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+.item {
+    background-color: white;
+    border: 2px;
+    padding: 0.2rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.3s ease, background-color 0.3s ease-in;
+}
+.item:hover {
+    transform: translateY(-5px);
+    background-color: rgb(212, 112, 12);
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.8);
+}
+.item img {
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title {
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
     color: black;
-    cursor: pointer;
+}
+.price {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 #cus {
     background-color: green;
-    color: white;
-    font-size: 20px;
-    font-weight: 100;
     text-align: center;
-    margin-bottom: -20px;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-top: -30px;
+    margin-bottom: -32px;
+}
+h3 {
+    color: black;
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.pmt {
+    color: black;
+    margin-bottom: 30px;
+}
+.pmt:hover {
+    color: white;
+    text-decoration: underline rgb(212, 112, 12) 2px;
 }
 .p3 {
     color:whitesmoke;
     font-family: "noto-serif";
     font-size: 23px;
     font-weight: 200;
-    margin-top: -20px;
+    margin-top: 10px;
 }
 .avatar {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-position: center;
+    margin-bottom: 5px;
 }
-
+.nav1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    word-spacing: 0.25rem;
+}
+.nav1 a {
+    color: white;
+    font-size: 23px;
+    font-weight: 200px;
+    text-decoration: none;
+}
 .nav1 a:hover {
     border-radius: 10px;
     color: rgb(212, 112, 12);
@@ -268,14 +268,71 @@ h3:hover{
     text-decoration: none;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.8);
 }
-
-@media (min-width: 768px) {
-    .nav {
-        display: flex;
-        /* justify-content: flex-end; */
-        margin-right: 8rem;
-        gap: 0.25rem;
-        align-items: center;
-        text-align: left;
+footer {
+    background: linear-gradient(145deg, rgb(212, 112, 12), black);
+    padding: 0.5rem;
+}
+p {
+    color: rgb(212, 112, 12);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    font-weight: 200;
+    font-display: block;
+}
+@media (max-width: 600px) {
+    .header {
+    display: flex;
+    background-color: rgb(212, 112, 12);
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.2rem;
+    padding: 1rem;
+    z-index: 100;
+}
+    .header nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+        margin-top: -10px;
+        gap: 0.01rem;
+        font-size: 0.313rem;
+        font-weight: 50;
     }
+    .avatar1 {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    background-position: left;
+    position: fixed;
+    margin-top: -0.875rem;
+    z-index: 100;
+}
+   .pmt1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    z-index: 100;
+    margin-left: 3.75rem;
+    margin-top: 1.063rem;
+    font-size: 0.938rem;
+    color: black;
+}
+    .p4 {
+        text-align: center;
+        margin-left: 1.875rem;
+        margin-right: 1.875rem;
+}
+    .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0.5rem;
+    border: 2px;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
 }
