@@ -10,7 +10,7 @@ body {
     background-color: cyan;
 }
 .hero {
-    background-color: darkblue;
+    background: linear-gradient(122deg, darkblue, rgb(228, 141, 26), cyan);
     display: flex;
     justify-content: space-between;
     align-items: center;
