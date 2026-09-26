@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gbadeyan Emmanuel Profile</title>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body: style="font-family: 'Times New Roman', Times, serif; background-color: rgb(54, 218, 163);">
-    <h1>About Me</h1>
-    <img src="corporate me.jpeg" alt="width=10mm height=10mm">
-    <p>I am Gbadeyan Emmanuel, popularly known as Gemanito. I'm a Video editor, Youtuber and a Web developer. I'm studying English Language in one of the most pregious Universities in Lagos, LASU. I've built my portfolio as a youtuber with a faceless and AI automated channel <a href="https://www.youtube.com/@WorshipTower1">WORSHIPTOWER.</a> I've done several gig as a video editor, and I always deliver with a clean and master touch. I look forward on setting my ground as a full stack Web 3 developer, cause that's my biggest dream. I also have great knowledge on Economics and Finance, will work perfectly in a Legal-Consultant based firm. Short Youtube video of <a href="https://www.youtube.com/shorts/rPHleMSeBq0"> Gemanito.</a> Then a local video of gemanito<video src="video of me.mp4"controls></video>, and a short intro <audio controls> <source src="audio of me.ogg" type="audio/mp3">audio.</audio></p>
-
-    <h2>QUALIFICATIONS</h2>
+<body>
+    <div class="hero">
+        <img src="corporate me.jpeg">
+    </div>
+    <div class="header">
+        <h1>About Me</h1>
+        <p>I am Gbadeyan Emmanuel, popularly known as Gemanito. I'm a Video editor, Youtuber and a Web developer. I'm studying English Language in one of the most pregious Universities in Lagos, LASU. I've built my portfolio as a youtuber with a faceless and AI automated channel <a href="https://www.youtube.com/@WorshipTower1">WORSHIPTOWER.</a> I've done several gig as a video editor, and I always deliver with a clean and master touch. I look forward on setting my ground as a full stack Web 3 developer, cause that's my biggest dream. I also have great knowledge on Economics and Finance, will work perfectly in a Legal-Consultant based firm. Short Youtube video of <a href="https://www.youtube.com/shorts/rPHleMSeBq0"> Gemanito.</a> Then a local video of gemanito<video src="video of me.mp4"controls></video>, and a short intro <audio controls> <source src="audio of me.ogg" type="audio/mp3">audio.</audio></p>
+    </div>
+    <main class="body">
+        <h2>QUALIFICATIONS</h2>
     <p> 
         <ul>A' level (JUPEB)</ul>
-    <ul>300 level English Language student</ul>
-<ul>5 years Youtube knowledge</ul>
-<ul>3 years Video Editing experience</ul>
-<ul>My Fron-end <a href="NODA.html">FIRST</a> project</ul>
-</p>
-<section>
+        <ul>300 level English Language student</ul>
+        <ul>5 years Youtube knowledge</ul>
+        <ul>3 years Video Editing experience</ul>
+        <ul>My <a href="NODA.html">FIRST</a>Front-end project</ul>
+    </p>
     <h3>Strength</h3>
     <ul>Communication skills</ul>
     <ul>Web Development</ul>
@@ -31,9 +33,10 @@
     <ul>Self-absorbed</ul>
     <ul>Reluctant to ask for help</ul>
     <ul>Perfectionist</ul>
-</section>
-<table border="2px" width="20px">
-    <tr><h2>My Hobbies</h2></tr>
+    </main>
+    <div class="table">
+        <table>
+        <tr><h2>My Hobbies</h2></tr>
     <tr>
         <th>DAYS</th>
         <th>ACTIVITIES</th>
@@ -66,13 +69,17 @@
         <td>Sunday</td>
         <td>Coding</td>
     </tr>
-</table>
-    <h2>CONTACTS</h2>
+   </table>
+    </div>
+    <div class="contacts">
+        <h2>CONTACTS</h2>
     <ol>+234 708 940 7844</ol>
     <ol><a href="https://www.instagram.com/iamgemanito">Instagram</a></ol>
     <ol><a href="https://www.youtube.com/@gemanito">Youtube</a></ol>
     <ol><a href="https://www.tiktok.com/@iamgemanito">Tiktok</a></ol>
-    <h2>ENQUIRY</h2>
+    </div>
+    <div class="enquiry">
+        <h2>ENQUIRY</h2>
     <label for="Name">Name</label>
     <input type="Name" placeholder="Name">
     <br>
@@ -82,6 +89,46 @@
      <label for="Text">Text</label>
     <input type="Text" placeholder="Text">
     <button>SUBMIT</button>
+    </div>
+    <div class="footer">
+        <footer>&copy;2026 Gbadeyan Emmanuel. All Rights Reserved.</footer>
+    </div>
 </body>
-<footer>&copy;2026 Gbadeyan Emmanuel. All Rights Reserved.</footer>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .hero {
+        background: linear-gradient(108deg, purple, gold, blue);
+        padding: 1.5rem;
+        height: 3rem;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .hero img {
+        width: 2.3rem;
+        height: 2.3rem;
+        border-radius: 50%;
+        margin-right: auto;
+        display: flex;
+        margin-top: -1rem;
+    }
+    .header h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        color: purple;
+        text-align: center;
+    }
+    .header p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: black;
+    }
+</style>
 </html>
