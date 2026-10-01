@@ -11,28 +11,36 @@
     </div>
     <div class="header">
         <h1>About Me</h1>
-        <p>I am Gbadeyan Emmanuel, popularly known as Gemanito. I'm a Video editor, Youtuber and a Web developer. I'm studying English Language in one of the most pregious Universities in Lagos, LASU. I've built my portfolio as a youtuber with a faceless and AI automated channel <a href="https://www.youtube.com/@WorshipTower1">WORSHIPTOWER.</a> I've done several gig as a video editor, and I always deliver with a clean and master touch. I look forward on setting my ground as a full stack Web 3 developer, cause that's my biggest dream. I also have great knowledge on Economics and Finance, will work perfectly in a Legal-Consultant based firm. Short Youtube video of <a href="https://www.youtube.com/shorts/rPHleMSeBq0"> Gemanito.</a> Then a local video of gemanito<video src="video of me.mp4"controls></video>, and a short intro <audio controls> <source src="audio of me.ogg" type="audio/mp3">audio.</audio></p>
+        <p>I am Gbadeyan Emmanuel, popularly known as <span style="color: blue;">Gemanito.</span> I'm a Video editor, Youtuber and a Web developer. I'm studying English Language in one of the most pregious Universities in Lagos, LASU. I've built my portfolio as a youtuber with a faceless and AI automated channel <a href="https://www.youtube.com/@WorshipTower1" style="text-decoration: none;">WORSHIPTOWER.</a> I've done several gig as a video editor, and I always deliver with a clean and master touch. I look forward on setting my ground as a <span style="color: red">full stack Web 3 developer,</span> cause that's my biggest dream. I also have great knowledge on Economics and Finance, will work perfectly in a Legal-Consultant based firm. Short Youtube video of <a href="https://www.youtube.com/shorts/rPHleMSeBq0" style="text-decoration: none; font-size: 1.5rem;"> Gemanito.</a> Then a local video of gemanito<video src="video of me.mp4"controls></video>, and a short intro <audio controls> <source src="audio of me.ogg" type="audio/mp3">audio.</audio></p>
     </div>
-    <main class="body">
-        <h2>QUALIFICATIONS</h2>
-    <p> 
+    <main>
+        <section>
+            <div>
+        <h2>QUALIFICATIONS</h2> 
+        <p> 
         <ul>A' level (JUPEB)</ul>
         <ul>300 level English Language student</ul>
         <ul>5 years Youtube knowledge</ul>
         <ul>3 years Video Editing experience</ul>
-        <ul>My <a href="NODA.html">FIRST</a>Front-end project</ul>
-    </p>
+        <ul>My <a href="NODA.html" style="text-decoration: none; color: blue; font-size: 1.5rem;">FIRST</a> front-end project</ul>
+       </p>
+    </div>
+    <div>
     <h3>Strength</h3>
     <ul>Communication skills</ul>
     <ul>Web Development</ul>
     <ul>Finance and Consultation</ul>
     <ul>Marketing Strategy</ul>
     <ul>Dressing and Modeling</ul>
+    </div>
+    <div>
     <h3>Weakness</h3>
     <ul>Time management</ul>
     <ul>Self-absorbed</ul>
     <ul>Reluctant to ask for help</ul>
     <ul>Perfectionist</ul>
+    </div>
+    </section>
     </main>
     <div class="table">
         <table>
@@ -117,6 +125,13 @@
         display: flex;
         margin-top: -1rem;
     }
+    .header {
+        margin-top: 1.95rem;
+        left: 0;
+        background: linear-gradient(156deg, rgb(247, 122, 5),rgb(199, 150, 150), red);
+        border: 0.25rem solid black;
+        padding: 0.88rem;
+    }
     .header h1 {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 2.5rem;
@@ -125,10 +140,53 @@
         text-align: center;
     }
     .header p {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        min-width: 2rem;
         font-size: 1.5rem;
         font-weight: 200;
         color: black;
+    }
+    main {
+        background: linear-gradient(156deg, gold, purple, blue);
+        padding: 1rem;
+        text-align: center;
+    }
+    main h2 {
+        color: #b60edc;
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.3rem;
+        margin-top: 0.3rem;
+        margin-bottom: 0.88rem;
+    }
+    section div {
+        background: white;
+        padding: 1.3rem;
+        border-radius: 0.5rem;
+        gap: 1rem;
+        font-weight: 300;
+        border: 0.125rem;
+        text-align: center;
+        margin-bottom: 0.25rem;
+    }
+    section h3 {
+        color: #b60edc;
+        font-family: serif;
+        font-size: 3rem;
+        font-weight: 500;
+        margin-top: -0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    section ul {
+        color: black;
+        font-size: 1.7rem;
+        font-weight: 200;
+        font-family: serif;
     }
 </style>
 </html>

@@ -37,10 +37,11 @@
     transform: translateY(-3px);
     background-color: rgb(212, 112, 12);
     border-radius: 0.625rem;
-    text-align: center;
-    color: green;
-    font-size: 20px;
-    font-weight: 250;
+    padding: 0.35rem;
+    color: antiquewhite;
+    font-size: 1.3rem;
+    font-weight: 450;
+    margin: auto;
     text-transform: uppercase;
     cursor: progress;
     text-decoration: none;
@@ -103,18 +104,21 @@ h2 {
 }
 .but1 {
     background-color: rgb(212, 112, 12);
+    padding: 0.35rem;
     border: 1.25rem;
     border-radius: 0.635rem;
     margin-top: 1.25rem;
     margin-bottom: 2.813rem;
     margin-left: 1.875rem;
     margin-bottom: 75px;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 .but1 a {
+    transform: translateY(-5px);
     text-decoration: none;
     color: green;
     font-family: "noto-serif";
-    font-size: 23px;
+    font-size: 1.3rem;
     font-weight: 200;
     padding: 0.25rem;
     margin: 0 auto;
@@ -126,23 +130,23 @@ h2 {
     font-size: 1.25rem;
     position: relative;
     text-decoration: solid;
-    padding: 0.25rem;
+    padding: 0.30rem;
     border: 0.938rem;
     border-radius: 0.625rem;
 }
 #about {
-    background-color: white;
+    background-color: antiquewhite;
     font-family: "coda";
     text-align: center;
     margin-top: -1.875rem;
     margin-bottom: -2rem;
 }
-h4 {
+.about-title {
     color: black;
     font-family: "not-serif";
     font-size: 1.875rem;
-    font-weight: 400;
-    margin-top: 1rem;
+    font-weight: 550;
+    margin-top: 2rem;
 }
 h4:hover {
     color: orange;
@@ -192,7 +196,7 @@ h4:hover {
 }
 .item:hover {
     transform: translateY(-5px);
-    background-color: rgb(212, 112, 12);
+    background: linear-gradient(125deg, green, antiquewhite, rgb(230, 114, 6)) ;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.8);
 }
 .item img {
@@ -212,6 +216,65 @@ h4:hover {
     color: black;
     font-size: 1.2rem;
     margin-bottom: 30px;
+}
+.ordernow {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 4rem;
+    color: black;
+    font-size: 1.5rem;
+}
+.ordh3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+input {
+    border-radius: 10px;
+    border: 2.5px solid black;
+    padding: 0.35rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    background-color: grey;
+    transition: background-color 0.3s ease;
+}
+input:hover {
+    background-color: antiquewhite;
+}
+::placeholder {
+    color: orange;
+    font-size: 1rem;
+}
+.form-order {
+    background-color: orange;
+    width: 30rem;
+    margin: auto;
+    padding: 5rem 7rem;
+    gap: 2rem;
+    border: 2px solid green;
+    border-radius: 12px;
+}
+.sp {
+    border-radius: 10px;
+    border: 2.5px solid black;
+    padding: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    background-color: grey;
+    transition: background-color 0.3s ease;
+}
+.submit {
+    text-decoration: none; color: antiquewhite; font-size: 1.5rem; font-weight: 500; background-color: red; padding: 0.5rem; border-radius: 10px; border: 2px solid black;transition: transform 0.4s ease, background-color 0.3s esae, color 0.3s esae;
+    margin: auto;
+    margin-top: 7rem;
+    margin-bottom: -5.5rem;
+}
+.submit:hover {
+    background-color: antiquewhite;
+    color: orange;
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.8);
 }
 #cus {
     background-color: green;

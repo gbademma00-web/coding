@@ -23,7 +23,7 @@
         <a href="#about">About</a>
         <a href="#Top-pick">Our Top-pick</a>
         <a href="#cus">Contact Us</a>
-        <a href="#cus">Order Now</a>
+        <a href="#odn">Order Now</a>
       </nav>
     </div>
     <div class="body">
@@ -34,13 +34,13 @@
       <button class="but1"><a href="#Top-pick">Our Products</a></button>
     </div>
     <div id="about">
-      <h4>Our Mission</h4>
+      <h4 class="about-title">Our Mission</h4>
       <p class="p4">
         We create interior spaces that turn houses into homes — blending perfect
         design, lasting comfort, and quiet dignity into every corner we touch.
         We believe your home should be filled with the comfort you deserve.
       </p>
-      <h4>Our Vision</h4>
+      <h4 class="about-title">Our Vision</h4>
       <p class="p4">
         To become the name families and businesses trust to design spaces that
         feel as good as they look — building a future where every home reflects
@@ -85,6 +85,29 @@
         </div>
       </section>
     </div>
+    <section class="ordernow" id="odn">
+      <div class="form-order">
+      <h3 class="ordh3"> <span style="color: antiquewhite;">Order</span><span style="color: black;"> Now</span></h3>
+      <form>
+        <label for="Name">Name</label>
+        <input type="text" placeholder="Your Name"> <br>
+        <label for="E-mail">E-mail</label>
+        <input type="email" placeholder="Your E-mail"> <br>
+        <label for="Products">Products</label>
+        <select name="Products" id="Products" style="color: orange; background-color: grey; padding: 0.35rem; border-radius: 8px; border: 2.5px solid black; font-size: 1rem;">
+        <option value="products">Beddings</option>
+        <option value="products">Room settings</option>
+        <option value="products">Cleaning</option>
+        <option value="products">Interior Gift Items</option>
+        </select> <br>
+        <label for="Time">Time</label>
+        <input type="time"> <br>
+        <label for="Special Requests">Special Requests</label>
+        <input type="text" placeholder="Any Special Requests? " class="sp"> <br>
+        <a href="#" class="submit">Submit</a>
+      </form>
+      </div>
+    </section>
     <div id="cus">
         <h3>Contact Us</h3>
         <img class="avatar" src="hoc1.jpeg" />
