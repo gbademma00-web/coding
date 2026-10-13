@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Of Comfort Price List</title>
+    <link rel="stylesheet" href="hocpp.css">
+</head>
+<body>
+    <div class="hero">
+        <image class="avatar" src="hoc1.jpeg"></image>
+        <nav class="cont">
+            <a href="hocm.html">Contact Us</a>
+        </nav>
+    </div>
+    <section class="backdrop">
+        <div class="pl1">
+            <h3>Deluxe Mattress</h3> 
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div> 
+        <div class="pl1">
+            <h3>Shine Mattress</h3>
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div>
+        <div class="pl1">
+            <h3>Grand Mattress</h3>
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div>
+        <div class="pl1">
+            <h3>Haven Mattress</h3>
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div>
+        <div class="pl1">
+            <h3>Supreme Mattress</h3>
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div>
+        <div class="pl1">
+            <h3>Orthopedic Classic Mattress</h3>
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div>
+        <div class="pl1">
+            <h3>Orthopedic Galaxy Mattress</h3>
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div>
+        <div class="pl1">
+            <h3>Spring Mattress</h3>
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div>
+        <div class="pl1">
+            <h3>Twill Single Mattress</h3>
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div>
+        <div class="pl1">
+            <h3>Twill Double Mattress</h3>
+            <button class="view" id="vwBtn">View</button>
+            <button class="close" id="clBtn">Close</button>
+            <div class="output" id="output"></div>
+        </div>
+    </section>
+    <script>
+
+        const prices = [
+            { id: 1, name: "Deluxe Mattress", price: "&#8358; 25,000-50,000" },
+            { id: 2, name: "Shine Mattress", price: "&#8358; 30,000-55,000" },
+            { id: 3, name: "Grand Mattress", price: "&#8358; 40,000-60,000" },
+            { id: 4, name: "Haven Mattress", price: "&#8358; 55,000-70,000" },
+            { id: 5, name: "Supreme Mattress", price: "&#8358; 60,000-100,000" },
+            { id: 6, name: "Orthopedic Classic Mattress", price: "&#8358; 85,000-200,000" },
+            { id: 7, name: "Orthopedic Galaxy Mattress", price: "&#8358; 85,000-150,000" },
+            { id: 8, name: "Spring Mattress", price: "&#8358; 100,000-250,000" },
+            { id: 9, name: "Twill Single Mattress", price: "&#8358; 135,000-220,000" },
+            { id: 10, name: "Twill Double Mattress", price: "&#8358; 150,000-250,000" }
+        ];
+
+        document.querySelectorAll(".pl1").forEach(function(card) {
+            const vwBtn = card.querySelector(".view");
+            const clBtn = card.querySelector(".close");
+            const output = card.querySelector(".output");
+
+            vwBtn.addEventListener("click", function() {
+                const item = prices.find(price => price.name === card.querySelector("h3").textContent);
+                output.innerHTML = `<p>Price List:</p><p>${item.name}: ${item.price}</p>`;
+            });
+
+            clBtn.addEventListener("click", function() {
+                output.innerHTML = "";
+            });
+        });
+    </script>
+</body>
+</html>
