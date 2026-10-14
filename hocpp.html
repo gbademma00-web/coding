@@ -9,6 +9,7 @@
 <body>
     <div class="hero">
         <image class="avatar" src="hoc1.jpeg"></image>
+        <h1 class="title">House Of Comfort Price List</h1>
         <nav class="cont">
             <a href="hocm.html">Contact Us</a>
         </nav>
@@ -97,7 +98,7 @@
 
             vwBtn.addEventListener("click", function() {
                 const item = prices.find(price => price.name === card.querySelector("h3").textContent);
-                output.innerHTML = `<p>Price List:</p><p>${item.name}: ${item.price}</p>`;
+                output.innerHTML = `<p>${item.name}: ${item.price}</p>`;
             });
 
             clBtn.addEventListener("click", function() {

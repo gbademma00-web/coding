@@ -25,10 +25,19 @@ body {
     position: fixed;
     margin-top: -0.875rem;
 }
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(212, 112, 12);
+    margin-left: 4.5rem;
+    text-align: center;
+}
  .cont {
     gap: 1rem;
     margin-left: auto;
     display: flex;
+    margin-top: -2.5rem;
 }
 a {
     text-decoration: none;
@@ -72,7 +81,7 @@ h3 {
     color: black;
     margin-top: 1rem;
     margin-left: 1rem;
-    margin-bottom: -2.2rem;
+    margin-bottom: -2rem;
 }
 .view {
     margin-left: auto;
@@ -96,4 +105,25 @@ h3 {
     padding: 0.35rem;
     font-size: 1.2rem;
     font-weight: 400;
+}
+.output {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: antiquewhite;
+    margin: 0.5rem;
+}
+
+/* ===== Mobile Styles ===== */
+@media (min-width: 600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-right: auto;
+    }  
 }
